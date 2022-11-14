@@ -10,7 +10,8 @@ public class ColliderCollisitionDisp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.name == "OVRPlayerController")
+        Debug.Log(other.transform.name);
+        if (other.transform.name != "Cylinder")
         {
             return;
         }
